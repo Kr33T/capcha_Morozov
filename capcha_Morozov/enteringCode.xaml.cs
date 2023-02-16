@@ -39,13 +39,12 @@ namespace capcha_Morozov
             if (sec != 0)
             {
                 sec--;
-                timer.Text = $"Осталось {sec} секунд";
+                timer.Text = $"Осталось {sec} секунд!";
             }
             else
             {
                 dispatcherTimer.Stop();
-                MainWindow.attempts++;
-                MessageBox.Show("не успешно");
+                MessageBox.Show("Вы не успели в установленные рамки", "Уведомление", MessageBoxButton.OK, MessageBoxImage.Warning);
                 this.Close();
             }
         }
@@ -55,17 +54,21 @@ namespace capcha_Morozov
             if (codeTB.Text.Equals(code))
             {
                 dispatcherTimer.Stop();
-                MessageBox.Show("успешно");
+                MessageBox.Show("Авторизация успешна!", "Уведомление", MessageBoxButton.OK, MessageBoxImage.Information);
                 this.Close();
                 Environment.Exit(0);
             }
             if (!codeTB.Text.Equals(code) && codeTB.Text.Length == 5)
             {
                 dispatcherTimer.Stop();
-                MainWindow.attempts++;
-                MessageBox.Show("не успешно");
+                MessageBox.Show("Код неверен", "Уведомление", MessageBoxButton.OK, MessageBoxImage.Warning);
                 this.Close();
             }
+        }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            MainWindow.attempts++;
         }
     }
 }

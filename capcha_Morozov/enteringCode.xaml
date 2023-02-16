@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:capcha_Morozov"
         mc:Ignorable="d"
-        Title="enteringCode" Height="150" Width="250">
+        Title="Ввод кода" Height="150" Width="250" Closing="Window_Closing">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
@@ -13,11 +13,11 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <TextBlock Text="Введите код" Grid.Row="0"/>
+        <TextBlock Text="Введите код" FontSize="16" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
         <TextBox Name="codeTB" Grid.Row="1" Width="200" Height="25" TextChanged="codeTB_TextChanged"/>
 
-        <TextBlock Name="timer" Grid.Row="2"/>
+        <TextBlock Name="timer" Text="Осталось 10 секунд!" FontSize="16" Foreground="Red" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2"/>
 
     </Grid>
 </Window>

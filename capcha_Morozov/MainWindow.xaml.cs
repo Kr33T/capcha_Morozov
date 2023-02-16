@@ -38,14 +38,14 @@ namespace capcha_Morozov
                 }
                 else
                 {
-                    MessageBox.Show("Введите капчу");
+                    MessageBox.Show("Введите капчу", "Уведомление", MessageBoxButton.OK, MessageBoxImage.Information);
                     capcha window = new capcha();
                     window.Show();
                 }
             }
             else
             {
-                MessageBox.Show("Неверный логин или пароль");
+                MessageBox.Show("Неверный логин или пароль", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 

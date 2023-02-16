@@ -126,7 +126,6 @@ namespace capcha_Morozov
                 }
                 canvas.Children.Add(tb);
             }
-            confirmBTN.Content = str;
         }
 
         private void cancelBTN_Click(object sender, RoutedEventArgs e)
@@ -138,13 +137,13 @@ namespace capcha_Morozov
         {
             if (capchaTB.Text.Equals(str))
             {
-                MessageBox.Show("успешно");
+                MessageBox.Show("Авторизация успешна!", "Уведомление", MessageBoxButton.OK, MessageBoxImage.Information);
                 Environment.Exit(0);
                 
             }
             else
             {
-                MessageBox.Show("не успешно");
+                MessageBox.Show("Ваш текст не совпадает с текстом из картинки\nПовторите попытку!", "Уведомление", MessageBoxButton.OK, MessageBoxImage.Warning);
                 updateCapcha();
             }
         }
