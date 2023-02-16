@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "capcha_Morozov", "capcha_Morozov\capcha_Morozov.csproj", "{BD97BDA5-4745-42F0-AECA-A0946F30B402}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD97BDA5-4745-42F0-AECA-A0946F30B402}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD97BDA5-4745-42F0-AECA-A0946F30B402}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD97BDA5-4745-42F0-AECA-A0946F30B402}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD97BDA5-4745-42F0-AECA-A0946F30B402}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3E983F2B-834D-426F-B465-FEA4B4AF853A}
+	EndGlobalSection
+EndGlobal

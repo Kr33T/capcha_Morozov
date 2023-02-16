@@ -1,0 +1,19 @@
+﻿<Window x:Class="capcha_Morozov.showCode"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:capcha_Morozov"
+        mc:Ignorable="d"
+        Title="showCode" Height="170" Width="250">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Name="enterTheCodeTB" TextWrapping="Wrap"/>
+
+        <Button Name="enterBTN" Click="enterBTN_Click" Grid.Row="1" Content="ок" Width="100" Height="25"/>
+    </Grid>
+</Window>

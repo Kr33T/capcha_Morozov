@@ -1,0 +1,23 @@
+﻿<Window x:Class="capcha_Morozov.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:capcha_Morozov"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBox Name="loginTB" Grid.Row="0" Width="200" Height="26"/>
+
+        <PasswordBox Name="passwordTB" Grid.Row="1" Width="200" Height="26"/>
+
+        <Button Name="authBTN" Click="authBTN_Click" Grid.Row="2" Width="200" Height="26" Content="Авторизироваться"/>
+
+    </Grid>
+</Window>
