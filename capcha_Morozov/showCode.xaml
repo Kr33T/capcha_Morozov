@@ -5,15 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:capcha_Morozov"
         mc:Ignorable="d"
-        Title="showCode" Height="170" Width="250">
+        Title="showCode" Height="220" Width="250">
     <Grid>
         <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
             <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <TextBlock Grid.Row="0" Name="enterTheCodeTB" TextWrapping="Wrap"/>
+        <TextBlock Text="НЕ ТОРОПИТЕСЬ!" Foreground="Red" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
-        <Button Name="enterBTN" Click="enterBTN_Click" Grid.Row="1" Content="ок" Width="100" Height="25"/>
+        <TextBlock Grid.Row="1" Text="Чтобы успешно авторизироваться необходимо запомнить код, указанный ниже и ввести его в следующем окне" TextAlignment="Center" TextWrapping="Wrap" Margin="10" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+        <TextBlock Foreground="Red" FontWeight="Bold" FontSize="18" Name="codeTB" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+        <Button Name="enterBTN" Click="enterBTN_Click" Grid.Row="3" Content="ок" Width="100" Height="25"/>
     </Grid>
 </Window>

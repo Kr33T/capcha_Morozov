@@ -28,7 +28,7 @@ namespace capcha_Morozov
             Random rnd = new Random();
             code = rnd.Next(10000, 100000).ToString();
 
-            enterTheCodeTB.Text = $"Чтобы успешно авторизироваться необходимо ввести следующий код в открывшемся окне: {code}";
+            codeTB.Text = code;
         }
 
         private void enterBTN_Click(object sender, RoutedEventArgs e)

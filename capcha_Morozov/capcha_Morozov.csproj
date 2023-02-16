@@ -55,12 +55,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="capcha.xaml.cs">
+      <DependentUpon>capcha.xaml</DependentUpon>
+    </Compile>
     <Compile Include="enteringCode.xaml.cs">
       <DependentUpon>enteringCode.xaml</DependentUpon>
     </Compile>
     <Compile Include="showCode.xaml.cs">
       <DependentUpon>showCode.xaml</DependentUpon>
     </Compile>
+    <Page Include="capcha.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="enteringCode.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

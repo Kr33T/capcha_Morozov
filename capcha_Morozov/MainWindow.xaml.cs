@@ -38,13 +38,20 @@ namespace capcha_Morozov
                 }
                 else
                 {
-                    MessageBox.Show("Израсходовано максимальное количество попыток");
+                    MessageBox.Show("Введите капчу");
+                    capcha window = new capcha();
+                    window.Show();
                 }
             }
             else
             {
                 MessageBox.Show("Неверный логин или пароль");
             }
+        }
+
+        private void capchaBTN_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
